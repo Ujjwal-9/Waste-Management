@@ -1,0 +1,14 @@
+<resources>
+    <string name="clarifai_id">vxlVf1al9aRQhuDU5KWctC34kycH-BruE9XxTcuU</string>
+    <string name="clarifai_secret">C1G_prtX_KM2XR6NtSm7wIiSD-8WYeOdT8Br3EAQ</string>
+
+    <string name="app_name">Garbage Management</string>
+
+    <string name="error_external_storage_permission_not_granted">You must accept this permission so we can upload your images!</string>
+
+    <string name="error_while_contacting_api">Error !</string>
+    <string name="no_results_from_api">No Result can be generated !</string>
+
+    <string name="upload_image_hint">Click the button in the bottom-right corner to upload an image!</string>
+
+</resources>
