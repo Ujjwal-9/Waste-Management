@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 >
@@ -11,14 +12,6 @@
       android:orientation="vertical"
   >
 
-    <TextView
-        android:id="@+id/steps"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="24dp"
-        />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/resultsList"
         android:layout_width="match_parent"
@@ -26,6 +19,18 @@
         android:layout_weight="0"
         android:padding="16dp"
     />
+
+    <TextView
+        android:id="@+id/steps"
+        android:textSize="24dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="24dp"
+        />
+
 
 
     <FrameLayout
@@ -63,7 +68,10 @@
           android:background="?android:windowBackground"
       />
 
+
+
     </FrameLayout>
+
   </LinearLayout>
 
   <android.support.design.widget.FloatingActionButton
@@ -74,7 +82,8 @@
       android:layout_marginBottom="16dp"
       android:layout_marginEnd="16dp"
       android:layout_marginRight="16dp"
+
       android:src="@android:drawable/ic_menu_upload"
-  />
+      app:backgroundTint="@color/md_deep_purple_A100" />
 
 </FrameLayout>

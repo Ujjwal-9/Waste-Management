@@ -72,24 +72,24 @@ public abstract class BaseActivity extends AppCompatActivity {
     setContentView(wrapper);
     unbinder = ButterKnife.bind(this);
 
-    final Toolbar toolbar = ButterKnife.findById(this, R.id.toolbar);
+//    final Toolbar toolbar = ButterKnife.findById(this, R.id.toolbar);
 
-    final Drawer drawer = new DrawerBuilder()
-        .withActivity(this)
-        .withToolbar(toolbar)
-        .withDrawerItems(drawerItems())
-        .build();
-
-    // Show the "hamburger"
-    setSupportActionBar(toolbar);
-    final ActionBar actionBar = getSupportActionBar();
-    if (actionBar != null) {
-      actionBar.setDisplayHomeAsUpEnabled(false);
-    }
-    drawer.getActionBarDrawerToggle().setDrawerIndicatorEnabled(true);
-
-    // Set the selected index to what the intent said we're in
-    drawer.setSelectionAtPosition(getIntent().getIntExtra(INTENT_EXTRA_DRAWER_POSITION, 0));
+//    final Drawer drawer = new DrawerBuilder()
+//        .withActivity(this)
+//        .withToolbar(toolbar)
+//        .withDrawerItems(drawerItems())
+//        .build();
+//
+//    // Show the "hamburger"
+//    setSupportActionBar(toolbar);
+//    final ActionBar actionBar = getSupportActionBar();
+//    if (actionBar != null) {
+//      actionBar.setDisplayHomeAsUpEnabled(false);
+//    }
+//    drawer.getActionBarDrawerToggle().setDrawerIndicatorEnabled(true);
+//
+//    // Set the selected index to what the intent said we're in
+//    drawer.setSelectionAtPosition(getIntent().getIntExtra(INTENT_EXTRA_DRAWER_POSITION, 0));
   }
 
   @Override
